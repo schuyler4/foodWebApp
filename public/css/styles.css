@@ -1,0 +1,29 @@
+body {
+    background-color: #A0522D;
+}
+
+#headerBox {
+    background-color: #000033;
+}
+
+#header {
+    color: white;
+}
+
+#loginBox {
+    background-color: #ff9999;
+}
+
+#foodEnterBox {
+    background-color: #99ffb3;
+}
+
+#mealTitleBox {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#makeMealBox {
+    padding: 10px;
+}
+
