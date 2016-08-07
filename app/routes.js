@@ -6,12 +6,12 @@ module.exports = (app, passport) => {
     
     app.get('/', (req, res) => {
         res.render('index')
-        if(isLoggedIn) {
+        /*if(isLoggedIn) {
             console.log(user)
         }
         else {
             console.log('you are not logged in')
-        }
+        }*/
     });
     
     app.post('/addMeal', (req, res) => {

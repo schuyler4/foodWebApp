@@ -2,35 +2,57 @@
 <html>
 <head>
     <title>Node Authentication</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href='css/styles.css'>
     <style>
         body        { padding-top:80px; }
     </style>
 </head>
 <body>
-<div class="container">
-    <div id='container'>
-        
-    </div>
 
-    <div class="jumbotron text-center">
-        <h1><span class="fa fa-lock"></span> Node Authentication</h1>
+    <div class='jumbotron' id='headerBox'>
+        <h1 id='header'>Food Web App</h1>
+    </div>
+<div class="container">
+    <div class="jumbotron" id='loginBox'>
 
         <p>Login or Register with:</p>
 
         <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
         <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron" id='foodEnterBox'>
         <h2>Enter A Meal</h2>
         <form action='/addMeal' method='post'>
-           what was the meal: <input type='text' name='title'/>
-            <input type='submit'>
+            <div id='mealTitleBox'>
+                <h4>what was the meal:</h4>
+                <input class='form-control' type='text' name='title'/>
+            </div>
+            <div id='makeMealBox'>
+                <h4>Did you make the meal</h4>
+                yes <input class='.radio-inline' type='radio' name='homemade'/>
+                No <input class='.radio-inline' type='radio' name='homemade'/>
+            </div>
+            <div id='mealGoodBox'>
+                <div class="form-group">
+                    <label for="sel1">How Good Was It</label>
+                    <select class="form-control" id="sel1">
+                    <option>Best Ever</option>
+                    <option>Vary Good</option>
+                    <option>Better Than Average</option>
+                    <option>Average</option>
+                    <option>worse than Average</option>
+                    <option>vary bad</option>
+                    <option>inedible</option>
+                    </select>
+                </div>
+            </div>
+            <button class='btn btn-primary' type='submit'>Submit Meal</button>
         </form>
         <a href='/graph'>Statistics</a>
     </div>
-ß
+
 </div>
 </body>
 </html>

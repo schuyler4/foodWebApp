@@ -29,6 +29,7 @@ const mealSchema = mongoose.Schema({
     title: String,
     homemade: Boolean,
     healthy: Boolean,
+    good: Number
 })
 
 module.exports = mongoose.model('User', userSchema)
